@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Kullanıcı",
+  "type": "object",
+  "properties": {
+    "isim": {
+      "type": "string",
+      "description": "Kullanıcının tam adı"
+    },
+    "yaş": {
+      "type": "integer",
+      "description": "Kullanıcının yaşı"
+    },
+    "email": {
+      "type": "string",
+      "format": "email",
+      "description": "Kullanıcının e-posta adresi"
+    },
+    "aktif": {
+      "type": "boolean",
+      "description": "Kullanıcının aktif olup olmadığı"
+    }
+  },
+  "required": ["isim", "email"]
+}
